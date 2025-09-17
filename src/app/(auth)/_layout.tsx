@@ -8,5 +8,10 @@ export default function AuthLayout() {
     return <Redirect href={"/"} />;
   }
 
-  return <Stack />;
+  return (
+    <Stack>
+      <Stack.Screen name="signIn" options={{ title: "Sign In" }} />
+      <Stack.Screen name="signUp" options={{ title: "Sign Up" }} />
+    </Stack>
+  );
 }
