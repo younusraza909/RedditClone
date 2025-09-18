@@ -25,6 +25,7 @@ export default function CreateScreen() {
   const goBack = () => {
     setTitle("");
     setBodyText("");
+    setGroup(null);
     router.back();
   };
 
